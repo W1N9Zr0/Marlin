@@ -41,7 +41,11 @@ Here are some standard links for getting your machine calibrated:
 #define STRING_VERSION "1.0.2"
 #define STRING_URL "reprap.org"
 #define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
-#define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(David Braam)" // Who made the changes.
+//                   |01234567890123456789|
+#define VERSION_BASE "Ultimaker: 12.12 RC1"
+#define VERSION_PROFILE "Github checkout"
+#define VERSION_STRING  VERSION_BASE " (" VERSION_PROFILE ")"
 #define STRING_SPLASH_LINE1 "v" STRING_VERSION // will be shown during bootup in line 1
 //#define STRING_SPLASH_LINE2 STRING_VERSION_CONFIG_H // will be shown during bootup in line2
 

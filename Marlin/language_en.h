@@ -122,6 +122,9 @@
 #ifndef MSG_CONTROL
 #define MSG_CONTROL                         "Control"
 #endif
+#ifndef MSG_VERSION
+#define MSG_VERSION                         "Firmware version"
+#endif
 #ifndef MSG_MIN
 #define MSG_MIN                             " " STR_THERMOMETER " Min"
 #endif
