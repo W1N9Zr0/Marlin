@@ -442,8 +442,8 @@ static void lcd_tune_menu()
     MENU_ITEM_EDIT(int3, MSG_BED, &target_temperature_bed, 0, BED_MAXTEMP - 15);
 #endif
     MENU_ITEM_EDIT(int3, MSG_FAN_SPEED, &fanSpeed, 0, 255);
+#if EXTRUDERS == 1
     MENU_ITEM_EDIT(int3, MSG_FLOW, &extrudemultiply, 10, 999);
-    MENU_ITEM_EDIT(int3, MSG_FLOW " 0", &extruder_multiply[0], 10, 999);
 #if TEMP_SENSOR_1 != 0
     MENU_ITEM_EDIT(int3, MSG_FLOW " 1", &extruder_multiply[1], 10, 999);
 #endif
@@ -452,6 +452,7 @@ static void lcd_tune_menu()
 #endif
 #if TEMP_SENSOR_3 != 0
     MENU_ITEM_EDIT(int3, MSG_FLOW " 3", &extruder_multiply[3], 10, 999);
+#endif
 #endif
 
 
