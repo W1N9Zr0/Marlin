@@ -132,7 +132,7 @@ Here are some standard links for getting your machine calibrated:
 // 147 is Pt100 with 4k7 pullup
 // 110 is Pt100 with 1k pullup (non standard)
 
-#define TEMP_SENSOR_0 -1
+#define TEMP_SENSOR_0 20
 #ifndef TEMP_SENSOR_1
 #define TEMP_SENSOR_1 0
 #endif
