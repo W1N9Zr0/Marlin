@@ -44,7 +44,9 @@ Here are some standard links for getting your machine calibrated:
 #define STRING_CONFIG_H_AUTHOR "(David Braam)" // Who made the changes.
 
 //                      |01234567890123456789|
-#define VERSION_BASE    "Ultimaker: 13.12"
+#ifndef VERSION_BASE
+#define VERSION_BASE    "Ultimaker: DEV"
+#endif
 #ifndef VERSION_PROFILE
 #define VERSION_PROFILE "Github checkout"
 #endif
